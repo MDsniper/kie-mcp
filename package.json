@@ -14,8 +14,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "node canary.js && tsc",
-    "prepare": "node canary.js"
+    "postinstall": "git config core.hooksPath .githooks && chmod +x .githooks/*"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4"
